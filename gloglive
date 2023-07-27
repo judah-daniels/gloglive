@@ -1,0 +1,6 @@
+#!/bin/zsh
+watch -cwt unbuffer git --no-pager log --graph --pretty=oneline --abbrev-commit --decorate --all $*
+
+#watch -c -x "/bin/zsh -c " "git log --all --graph --decorate --oneline"
+#watch -c "git --no-pager log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all -20"
+#watch --color "git --no-pager log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all -20"
